@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./vendor/hub-ui/src/**/*.{js,ts,jsx,tsx}",
-    "../../packages/hub-ui/src/**/*.{js,ts,jsx,tsx}",
+    "./vendor/hub-identity/src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {

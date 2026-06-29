@@ -1,17 +1,17 @@
-/* Relative hub-ui CSS — postcss-import cannot resolve @tool-workspace/hub-ui/styles via Vite alias. */
-@import "../../../../packages/hub-ui/src/styles/hub-fonts.css";
-@import "../../../../packages/hub-ui/src/styles/hub-check-indicator.css";
-@import "../../../../packages/hub-ui/src/styles/hub-fields.css";
-@import "../../../../packages/hub-ui/src/styles/hub-shell-layout.css";
-@import "../../../../packages/hub-ui/src/styles/hub-directory-bulk-rail.css";
-@import "../../../../packages/hub-ui/src/styles/hub-directory-toolbar-selection.css";
-@import "../../../../packages/hub-ui/src/styles/hub-split-scroll.css";
-@import "../../../../packages/hub-ui/src/styles/hub-app-tab-header.css";
-@import "../../../../packages/hub-ui/src/styles/hub-users-table.css";
+/* Relative hub-ui CSS — vendor copy for standalone Vercel deploy. */
+@import "../../vendor/hub-ui/src/styles/hub-fonts.css";
+@import "../../vendor/hub-ui/src/styles/hub-check-indicator.css";
+@import "../../vendor/hub-ui/src/styles/hub-fields.css";
+@import "../../vendor/hub-ui/src/styles/hub-shell-layout.css";
+@import "../../vendor/hub-ui/src/styles/hub-directory-bulk-rail.css";
+@import "../../vendor/hub-ui/src/styles/hub-directory-toolbar-selection.css";
+@import "../../vendor/hub-ui/src/styles/hub-split-scroll.css";
+@import "../../vendor/hub-ui/src/styles/hub-app-tab-header.css";
+@import "../../vendor/hub-ui/src/styles/hub-users-table.css";
 @import "./hub-directory-table.css";
-@import "../../../../packages/hub-ui/src/styles/hub-table-controls.css";
-@import "../../../../packages/hub-ui/src/styles/hub-table-cell.css";
-@import "../../../../packages/hub-ui/src/styles/hub-split-directory-pane.css";
-@import "../../../../packages/hub-ui/src/styles/hub-directory-frame-table.css";
-@import "../../../../packages/hub-ui/src/styles/hub-modal.css";
-@import "../../../../packages/hub-ui/src/styles/hub-auth-gate.css";
+@import "../../vendor/hub-ui/src/styles/hub-table-controls.css";
+@import "../../vendor/hub-ui/src/styles/hub-table-cell.css";
+@import "../../vendor/hub-ui/src/styles/hub-split-directory-pane.css";
+@import "../../vendor/hub-ui/src/styles/hub-directory-frame-table.css";
+@import "../../vendor/hub-ui/src/styles/hub-modal.css";
+@import "../../vendor/hub-ui/src/styles/hub-auth-gate.css";
