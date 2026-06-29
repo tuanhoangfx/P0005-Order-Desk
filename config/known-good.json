@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "label": "stable-0.1.0",
+  "version": "0.1.0",
+  "gitCommit": "3eff574",
+  "gitTag": "v0.1.0-stable",
+  "productType": "Web",
+  "notes": "crm.infi.io.vn — Order Desk CRM production. Rollback: scripts/restore-known-good.ps1 -Rollback",
+  "deploy": {
+    "provider": "vercel",
+    "project": "p0005-order-desk",
+    "projectId": "prj_yzPih7O3c59PSYnwFN9rGCUNehXV",
+    "productionUrl": "https://crm.infi.io.vn",
+    "deploymentId": "dpl_BMJZH9WQJ47uACJ1eV3uT26Vnt1M",
+    "deploymentUrl": "https://p0005-order-desk-n4yxuxx3v-tuanhoangfxs-projects.vercel.app",
+    "customDomains": ["crm.infi.io.vn"],
+    "dnsRecord": "A crm.infi.io.vn 76.76.21.21",
+    "deployHookName": "ship-production",
+    "capturedAt": "2026-06-29T15:40:00.000Z"
+  },
+  "envKeys": ["VITE_SUPABASE_URL", "VITE_SUPABASE_ANON_KEY"],
+  "restore": {
+    "rollback": "vercel rollback dpl_BMJZH9WQJ47uACJ1eV3uT26Vnt1M",
+    "dns": "node ../../scripts/sync-vercel-dns-cf.mjs --apply --product-root Tool/P0005-Order-Desk",
+    "smoke": "node scripts/smoke-order-desk.mjs"
+  },
+  "checklist": [
+    "https://crm.infi.io.vn loads Customers/Orders",
+    "Sign-in via Hub workspace account",
+    "Supabase RLS per user_id"
+  ]
+}

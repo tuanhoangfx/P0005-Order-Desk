@@ -41,6 +41,7 @@
   "deployTarget": "vercel",
   "vercel": {
     "project": "p0005-order-desk",
+    "projectId": "prj_yzPih7O3c59PSYnwFN9rGCUNehXV",
     "productionUrl": "https://crm.infi.io.vn",
     "customDomain": "https://crm.infi.io.vn",
     "customDomains": [
@@ -48,7 +49,9 @@
     ],
     "dnsRequired": "A crm.infi.io.vn 76.76.21.21",
     "productionBranch": "main",
-    "team": "tuanhoangfxs-projects"
+    "team": "tuanhoangfxs-projects",
+    "deployHookUrl": "https://api.vercel.com/v1/integrations/deploy/prj_yzPih7O3c59PSYnwFN9rGCUNehXV/a8vbiyUxbh",
+    "deployHookName": "ship-production"
   },
   "knownGood": {
     "config": "config/known-good.json",
