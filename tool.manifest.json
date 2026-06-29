@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "code": "P0005",
+  "id": "order-desk",
+  "aliases": [
+    "P0005",
+    "Order Desk",
+    "P0005-Order-Desk",
+    "CRM"
+  ],
+  "name": "Order Desk",
+  "type": "Web",
+  "owner": "Tool",
+  "status": "Ready",
+  "summary": "Customer and order management — links P0020 Account vault and P0016 inbox threads. Production CRM at crm.infi.io.vn.",
+  "stack": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "@tool-workspace/hub-ui",
+    "Supabase"
+  ],
+  "commands": {
+    "dev": "node ../scripts/ensure-dev-product.cjs P0005",
+    "open": "node ../scripts/ensure-dev-product.cjs P0005 --open",
+    "build": "corepack pnpm build",
+    "typecheck": "corepack pnpm typecheck",
+    "db:migrate:api": "node scripts/apply-order-desk-migrations-api.mjs"
+  },
+  "docs": {
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md",
+    "architecture": "docs/ARCHITECTURE.md",
+    "crossToolContract": "docs/CROSS-TOOL-CONTRACT.md"
+  },
+  "github": {
+    "repo": "tuanhoangfx/P0005-Order-Desk",
+    "branch": "main",
+    "manifestPath": "tool.manifest.json"
+  },
+  "deployTarget": "vercel",
+  "vercel": {
+    "project": "p0005-order-desk",
+    "productionUrl": "https://crm.infi.io.vn",
+    "customDomain": "https://crm.infi.io.vn",
+    "customDomains": [
+      "crm.infi.io.vn"
+    ],
+    "dnsRequired": "A crm.infi.io.vn 76.76.21.21",
+    "productionBranch": "main",
+    "team": "tuanhoangfxs-projects"
+  },
+  "knownGood": {
+    "config": "config/known-good.json",
+    "tagSuffix": "-stable",
+    "snapshot": "node scripts/snapshot-known-good.mjs",
+    "restore": "powershell -File scripts/restore-known-good.ps1 -Rollback"
+  },
+  "dependsOn": [
+    "P0004",
+    "P0020",
+    "P0016"
+  ],
+  "release": {
+    "version": "0.1.0",
+    "readiness": [
+      "manifest",
+      "supabase-schema",
+      "cross-tool-contract",
+      "hub-ui-shell",
+      "vercel-production"
+    ]
+  },
+  "supabase": {
+    "projectRef": "bklxcjrkhrevdcqjscku",
+    "migrationsDir": "supabase/migrations",
+    "envPrefix": "VITE_SUPABASE",
+    "notes": "Order Desk schema in Data Box plane — separate tables, RLS per user_id"
+  },
+  "health": {
+    "status": "Ready",
+    "note": "Production https://crm.infi.io.vn — Hub auth; links P0020 twofa_accounts + P0016 thread refs"
+  },
+  "urls": {
+    "local": "http://127.0.0.1:3005",
+    "app": "https://crm.infi.io.vn",
+    "preview": "https://crm.infi.io.vn"
+  },
+  "smoke": [
+    {
+      "name": "order-desk-manifest",
+      "command": "node scripts/smoke-order-desk.mjs"
+    }
+  ],
+  "uiScreens": [
+    {
+      "screen": "customers",
+      "template": "directory",
+      "golden": "P0004/users",
+      "notes": "Customer directory — HubDirectoryScreen golden"
+    },
+    {
+      "screen": "orders",
+      "template": "directory",
+      "golden": "P0004/users",
+      "notes": "Order pipeline directory — status filters, twofa_account link"
+    },
+    {
+      "screen": "overview",
+      "template": "document-toc",
+      "golden": "P0004/overview-toc",
+      "notes": "Architecture + cross-tool contract summary"
+    }
+  ],
+  "integrations": {
+    "p0020": {
+      "role": "Account vault reference",
+      "entity": "twofa_accounts",
+      "plane": "zurfouqanjcubgneuctp",
+      "field": "twofa_account_id"
+    },
+    "p0016": {
+      "role": "Conversation deep link only",
+      "fields": [
+        "chat_bot_id",
+        "chat_thread_id",
+        "chat_channel"
+      ],
+      "noMessageSync": true
+    }
+  },
+  "manifestUpdatedAt": "2026-06-29T00:00:00.000Z"
+}

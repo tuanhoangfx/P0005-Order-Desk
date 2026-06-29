@@ -1,0 +1,12 @@
+@import "./styles/hub-ui-styles.css";
+@import "./theme/hub-appearance.css";
+@import "./theme/hub-theme-align.css";
+@import "./theme/order-desk-shell.css";
+@import "./styles/base.css";
+@import "./styles/overview-toc.css";
+
+body:has(.hub-app.theme-hub) {
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}

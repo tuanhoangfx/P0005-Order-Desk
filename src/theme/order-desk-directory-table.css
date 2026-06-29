@@ -1,0 +1,182 @@
+/* P0005 Order Desk directory — fixed rem cols + colgroup SSOT (P0024 golden parity). */
+table.hub-users-table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select],
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] {
+  table-layout: fixed;
+  width: 100%;
+  min-width: 0;
+}
+
+.hub-directory-table-split .hub-directory-table-head table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select],
+.hub-directory-table-split .hub-directory-table-head table.order-desk-directory-table[data-hub-directory-select],
+.hub-directory-table-split .hub-directory-table-body-scroll table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select],
+.hub-directory-table-split .hub-directory-table-body-scroll table.order-desk-directory-table[data-hub-directory-select] {
+  width: 100%;
+  min-width: 0;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-order-id,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-order-id,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-order-id,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-order-id,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-order-id,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-order-id,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-buyer-id,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-buyer-id,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-buyer-id,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-buyer-id,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-buyer-id,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-buyer-id {
+  width: 8.5rem;
+  min-width: 8.5rem;
+  max-width: 8.5rem;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-name,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-name,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-name,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-name,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-name,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-name {
+  width: 14rem;
+  min-width: 14rem;
+  max-width: 14rem;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-product,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-product,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-product,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-product,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-product,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-product {
+  width: 18rem;
+  min-width: 18rem;
+  max-width: 18rem;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-phone,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-phone,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-phone,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-phone,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-phone,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-phone {
+  width: 9rem;
+  min-width: 9rem;
+  max-width: 9rem;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-tier,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-tier,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-tier,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-tier,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-tier,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-tier {
+  width: 5.5rem;
+  min-width: 5.5rem;
+  max-width: 5.5rem;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-seller,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-seller,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-seller,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-seller,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-seller,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-seller {
+  width: 5rem;
+  min-width: 5rem;
+  max-width: 5rem;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-status,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-status,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-status,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-status,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-status,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-status {
+  width: 6.5rem;
+  min-width: 6.5rem;
+  max-width: 6.5rem;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-amount,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-amount,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-amount,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-amount,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-amount,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-amount {
+  width: 6.5rem;
+  min-width: 6.5rem;
+  max-width: 6.5rem;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-qty,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-qty,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-qty,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-qty,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-qty,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-qty {
+  width: 3.75rem;
+  min-width: 3.75rem;
+  max-width: 3.75rem;
+}
+
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-updated,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-updated,
+table.hub-users-table--directory-6.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-updated,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] col.hub-users-col--od-updated,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] th.hub-users-col--od-updated,
+table.hub-users-table.order-desk-directory-table[data-hub-directory-select] td.hub-users-col--od-updated {
+  width: 6.25rem;
+  min-width: 6.25rem;
+  max-width: 6.25rem;
+}
+
+.hub-main--order-desk .hub-users-table-wrap {
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+}
+
+.order-desk-directory-frame table.order-desk-directory-table td,
+.order-desk-directory-frame table.order-desk-directory-table th,
+table.order-desk-directory-table td,
+table.order-desk-directory-table th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.order-desk-directory-frame table.order-desk-directory-table td > *,
+table.order-desk-directory-table td > * {
+  max-width: 100%;
+}
+
+.order-desk-directory-frame table.order-desk-directory-table td span,
+.order-desk-directory-frame table.order-desk-directory-table td .hub-users-directory-body-text,
+.order-desk-directory-frame table.order-desk-directory-table td .hub-users-cell-num,
+table.order-desk-directory-table td span,
+table.order-desk-directory-table td .hub-users-directory-body-text,
+table.order-desk-directory-table td .hub-users-cell-num {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.order-desk-directory-frame table.order-desk-directory-table td.hub-users-col--od-status,
+.order-desk-directory-frame table.order-desk-directory-table td.hub-users-col--od-qty,
+.order-desk-directory-frame table.order-desk-directory-table td.hub-users-col--od-amount,
+table.order-desk-directory-table td.hub-users-col--od-status,
+table.order-desk-directory-table td.hub-users-col--od-qty,
+table.order-desk-directory-table td.hub-users-col--od-amount {
+  text-align: center;
+}
+
+.order-desk-directory-frame .hub-split-directory-pane__body .hub-directory-table-split.hub-directory-table-scroll--flex-pane {
+  min-height: 0;
+}
+
+.order-desk-directory-frame .hub-users-table-wrap.hub-directory-table-scroll--flex-pane {
+  min-width: 0;
+  overflow-x: auto;
+}

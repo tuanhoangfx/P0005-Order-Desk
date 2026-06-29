@@ -1,0 +1,33 @@
+{
+  "name": "p0005-order-desk",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.15.9",
+  "type": "module",
+  "description": "P0005 Order Desk — customers + orders linked to P0020 vault and P0016 chat.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 3005",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4005",
+    "typecheck": "tsc --noEmit",
+    "db:migrate:api": "node scripts/apply-order-desk-migrations-api.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.106.2",
+    "@tool-workspace/hub-identity": "file:./vendor/hub-identity",
+    "@tool-workspace/hub-ui": "file:./vendor/hub-ui",
+    "@vitejs/plugin-react": "^5.1.1",
+    "lucide-react": "^0.561.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "vite": "^7.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.13",
+    "typescript": "^5.9.3"
+  }
+}

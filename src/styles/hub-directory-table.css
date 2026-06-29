@@ -1,0 +1,3 @@
+/* P0005 directory table — hub-ui SSOT */
+@import "../../../../packages/hub-ui/src/styles/hub-directory-table.css";
+@import "../theme/order-desk-directory-table.css";
